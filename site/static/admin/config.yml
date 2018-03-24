@@ -11,18 +11,18 @@ collections:
     folder: "site/content/food" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
-      - {label: "Name of Item", name: "layout", widget: "hidden"}
-      - {label: "Supported Meals", name: "categories", widget: "list", default: ["lunch","dinner"]}
+      - {label: "Name of Item", name: "layout", widget: "string"}
+      - {label: "Supported Meals", name: "categories", widget: "hidden", default: ["lunch","dinner"]}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
-      - {label: "Type of food", name: "type", widget: "string", default: ["tagine"]}
+      - {label: "Type of food", name: "type", widget: "string", default: ["Tagine"]}
       - {label: "Price", name: "price", widget: "string"}
   - name: "drinks" # Used in routes
     label: "Drinks Item" # Used in the UI
     folder: "site/content/drinks" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
-      - {label: "Name of Drink", name: "layout", widget: "hidden"}
-      - {label: "Drink Marker", name: "categories", widget: "list", default: ["drinks"]}
+      - {label: "Name of Drink", name: "layout", widget: "string"}
+      - {label: "Drink Marker", name: "categories", widget: "hidden", default: ["drinks"]}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Type of drinks", name: "type", widget: "string", default: ["Tea", "Juice", "Lemonade"]}
       - {label: "Price", name: "price", widget: "string"}
