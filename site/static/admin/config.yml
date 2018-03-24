@@ -11,7 +11,7 @@ collections:
     folder: "site/content/food" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
-      - {label: "Name of Item", name: "layout", widget: "string"}
+      - {label: "Name of Item", name: "title", widget: "string"}
       - {label: "Supported Meals", name: "categories", widget: "list", default: ["lunch","dinner"]}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Type of food", name: "type", widget: "string", default: ["Tagine"]}
@@ -21,7 +21,7 @@ collections:
     folder: "site/content/drinks" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
-      - {label: "Name of Drink", name: "layout", widget: "string"}
+      - {label: "Name of Drink", name: "title", widget: "string"}
       - {label: "Drink Marker", name: "categories", widget: "hidden", default: ["drinks"]}
       - {label: "Ingredients/Description", name: "description", widget: "text"}
       - {label: "Type of drinks", name: "type", widget: "list", default: ["Tea", "Juice", "Lemonade"]}
@@ -31,5 +31,5 @@ collections:
     folder: "site/content/gallery" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "layout", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
       - {label: "Gallery Image", name: "image", widget: "image"}
