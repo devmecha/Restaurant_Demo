@@ -3,9 +3,9 @@ backend:
   repo: devmecha/Restaurant_Demo
   branch: master # Branch to update (optional; defaults to master)
 
-  media_folder: "src/img/gallery" # Media files will be stored in the repo under images/uploads
+media_folder: "src/img/gallery" # Media files will be stored in the repo under images/uploads
 
-  collections:
+collections:
   - name: "food" # Used in routes
     label: "Food Item" # Used in the UI
     folder: "site/content/food" # The path to the folder where the documents are stored
